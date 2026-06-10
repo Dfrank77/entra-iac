@@ -15,5 +15,5 @@ output "sample_app_client_id" {
 
 output "blocked_countries_location_id" {
   description = "ID of the high-risk countries named location"
-  value       = azuread_named_location.blocked_countries.id
+  value       = module.ca_baseline.blocked_countries_location_id
 }

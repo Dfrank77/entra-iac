@@ -13,10 +13,10 @@ resource "azuread_application" "sample_app" {
   }
 
   required_resource_access {
-    resource_app_id = "00000003-0000-0000-c000-000000000000"  # Microsoft Graph
+    resource_app_id = "00000003-0000-0000-c000-000000000000" # Microsoft Graph
 
     resource_access {
-      id   = "e1fe6dd8-ba31-4d61-89e7-88639da4683d"  # User.Read
+      id   = "e1fe6dd8-ba31-4d61-89e7-88639da4683d" # User.Read
       type = "Scope"
     }
   }
