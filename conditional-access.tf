@@ -4,6 +4,7 @@ module "ca_baseline" {
   policy_prefix         = "IaC"
   policy_state          = "disabled"
   blocked_country_codes = ["KP", "IR", "RU", "BY", "CN"]
+  breakglass_object_ids = var.breakglass_object_ids
 }
 
 resource "azuread_conditional_access_policy" "require_mfa_admins" {
