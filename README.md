@@ -1,0 +1,45 @@
+# entra-iac
+
+Terraform-based Infrastructure-as-Code for Microsoft Entra ID identity objects.
+
+## Overview
+
+This project demonstrates declarative provisioning of Entra ID resources using the `hashicorp/azuread` Terraform provider. Resources include users, security groups, conditional access policies, named locations, and application registrations.
+
+## Resources Managed
+
+- Users with job titles and department metadata
+- Security groups with declarative membership
+- Conditional Access policies (legacy auth block, admin MFA, geo-blocking)
+- Named locations (country-based)
+- Application registrations with Microsoft Graph API permissions
+- Service principals
+
+## Architecture Patterns Demonstrated
+
+- Cross-resource dependencies (groups referencing users, CA policies referencing named locations)
+- Built-in directory role targeting via fixed object IDs
+- App registration + service principal pairing
+- Conservative defaults (CA policies created in `disabled` state for safe promotion)
+
+## Authentication
+
+Uses Azure CLI authentication via `az login`. Provider picks up cached credentials automatically.
+
+## Usage
+
+```bash
+terraform init
+terraform plan
+terraform apply
+```
+
+## Stack
+
+- Terraform ≥ 1.5.0
+- hashicorp/azuread ~> 2.50
+- Tenant: lab environment (Microsoft 365 E5 trial)
+
+## Author
+
+Darius Frank — Information Security Specialist focused on identity, access management, and identity governance.
