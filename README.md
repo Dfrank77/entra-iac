@@ -34,6 +34,12 @@ terraform plan
 terraform apply
 ```
 
+## Related Repositories
+
+- **[security-learning-artifacts](https://github.com/Dfrank77/security-learning-artifacts)** — Multi-platform IAM labs across Entra ID, AWS, Okta, and hybrid identity. Provides the conceptual foundation this IaC implementation builds on.
+- **[entra-attack-path-visualizer](https://github.com/Dfrank77/entra-attack-path-visualizer)** — Python tooling for detecting privilege escalation in Entra ID.
+  
+
 ## Stack
 
 - Terraform ≥ 1.5.0
