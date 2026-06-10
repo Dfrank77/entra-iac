@@ -34,4 +34,4 @@ resource "azuread_user" "lab_users" {
   job_title           = each.value.job_title
   department          = each.value.department
 }
-}
+
