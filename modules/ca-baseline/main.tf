@@ -42,6 +42,7 @@ resource "azuread_conditional_access_policy" "block_high_risk_countries" {
 
     users {
       included_users = ["All"]
+      excluded_users = var.breakglass_object_ids
     }
 
     locations {

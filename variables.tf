@@ -14,3 +14,9 @@ variable "domain_name" {
   type        = string
   default     = "dfrank-iam.com"
 }
+
+variable "breakglass_object_ids" {
+  description = "Object IDs of tenant break-glass accounts to exclude from block policies"
+  type        = list(string)
+  sensitive   = true
+}
