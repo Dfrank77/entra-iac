@@ -18,10 +18,19 @@ This project demonstrates declarative provisioning of Entra ID resources using t
 ![CA policies](screenshots/03-ca-policies-list.png)
 
 ### Break-glass exclusion on block policy
+### Break-glass exclusion on block policy
 ![CA policy detail](screenshots/04-ca-policy-detail-breakglass.png)
 
 ### Named location with country list
-![Named locations](screenshots/05-named-locations-detail.png)
+## Country codes managed via variable
+
+\```hcl
+# From conditional-access.tf
+module "ca_baseline" {
+  source                = "./modules/ca-baseline"
+  blocked_country_codes = ["KP", "IR", "RU", "BY", "CN"]
+}
+\```
 
 ### App registration with Microsoft Graph permissions
 ![App registration](screenshots/06-app-registration.png)
