@@ -6,6 +6,29 @@ Terraform-based Infrastructure-as-Code for Microsoft Entra ID identity objects.
 
 This project demonstrates declarative provisioning of Entra ID resources using the `hashicorp/azuread` Terraform provider. Resources include users, security groups, conditional access policies, named locations, and application registrations.
 
+## Screenshots
+
+### Users (provisioned via Terraform `for_each`)
+![Users blade](screenshots/01-users-blade.png)
+
+### Groups with declarative membership
+![Groups blade](screenshots/02-groups-blade.png)
+
+### Conditional Access policies list
+![CA policies](screenshots/03-ca-policies-list.png)
+
+### Break-glass exclusion on block policy
+![CA policy detail](screenshots/04-ca-policy-detail-breakglass.png)
+
+### Named location with country list
+![Named locations](screenshots/05-named-locations-detail.png)
+
+### App registration with Microsoft Graph permissions
+![App registration](screenshots/06-app-registration.png)
+
+### Terraform apply output
+![Terraform apply](screenshots/07-terraform-apply-output.png)
+
 ## Resources Managed
 
 - Users with job titles and department metadata
