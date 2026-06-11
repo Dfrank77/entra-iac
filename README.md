@@ -21,7 +21,6 @@ This project demonstrates declarative provisioning of Entra ID resources using t
 ![Breakglass CA](screenshots/04-ca-policy-breakglass-exclusion.png)
 
 ### Named location with country list
-## Country codes managed via variable
 
 \```hcl
 module "ca_baseline" {
