@@ -11,7 +11,7 @@ This project demonstrates declarative provisioning of Entra ID resources using t
 ### Users (provisioned via Terraform `for_each`)
 ![Users blade](screenshots/01-users-blade.png)
 
-### Groups with declarative membership### Break-glass exclusion on block policy
+### Groups with declarative membership policy
 ![Groups blade](screenshots/02-groups-blade.png)
 
 ### Conditional Access policies list
@@ -24,7 +24,6 @@ This project demonstrates declarative provisioning of Entra ID resources using t
 ## Country codes managed via variable
 
 \```hcl
-# From conditional-access.tf
 module "ca_baseline" {
   source                = "./modules/ca-baseline"
   blocked_country_codes = ["KP", "IR", "RU", "BY", "CN"]
