@@ -11,15 +11,14 @@ This project demonstrates declarative provisioning of Entra ID resources using t
 ### Users (provisioned via Terraform `for_each`)
 ![Users blade](screenshots/01-users-blade.png)
 
-### Groups with declarative membership
+### Groups with declarative membership### Break-glass exclusion on block policy
 ![Groups blade](screenshots/02-groups-blade.png)
 
 ### Conditional Access policies list
 ![CA policies](screenshots/03-ca-policies-list.png)
 
 ### Break-glass exclusion on block policy
-### Break-glass exclusion on block policy
-![CA policy detail](screenshots/04-ca-policy-detail-breakglass.png)
+![Breakglass CA](screenshots/04-ca-policy-breakglass-exclusion.png)
 
 ### Named location with country list
 ## Country codes managed via variable
